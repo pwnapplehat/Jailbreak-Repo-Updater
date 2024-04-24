@@ -17,6 +17,7 @@ Supports different architectures and sets the Filename path accordingly.
 
 1. 'get_deb_info(deb_file)': Extracts metadata and checksum information from a Debian package file ('deb_file') using the 'ar' command and hashlib library.
 2. 'update_packages_file()': Updates the 'Packages' file by iterating through '.deb'files in the script's folder. For each '.deb' file:
+
    - Extracts package information using 'get_deb_info'.
    - Constructs a package entry string.
    - Updates or adds entries in the 'Packages' file based on architecture and package ID.
